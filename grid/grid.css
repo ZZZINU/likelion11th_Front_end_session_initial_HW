@@ -21,7 +21,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 3fr 1fr;
   background-color: #070a07;
   color: #ff7710;
@@ -33,6 +33,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; /**/
 }
 
 .item:nth-child(1) {
@@ -73,11 +74,15 @@ body {
   box-sizing: border-box;
   font-size: 1.2rem;
   font-family: "Roboto-Regular";
-  transform: scale(0.42);
-  border: 1px solid white;
-  /* zoom: 0.6; */
-  padding: 0px 0px 20px 0px;
-  margin-bottom: 53%;
+  border: 10px solid white;
+  zoom: 0.5;
+  /* padding: 0px 0px 20px 0px; */
+  /* margin-bottom: 53%; */
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
 }
 
 /* body {
@@ -93,9 +98,9 @@ body {
   padding: 20px 0px 20px 20px ;
 }
 
-.insta_item:nth-child(1) {
+/* .insta_item:nth-child(1) {
   background-color: black;
-}
+} */
 
 .arrow::after {
   content:'\f104';
@@ -106,13 +111,13 @@ body {
 }
 
 
-.insta_item:nth-child(2) {
+.insta_item:nth-child(1) {
   background-color: #121212;
   font-size: 20px;
   padding: 5px 0px 5px 20px ;
 }
 
-.insta_item:nth-child(2) img{
+.insta_item:nth-child(1) img{
   width: 50px;
   height: 50px;
   margin-right: 20px;
@@ -125,17 +130,17 @@ body {
   margin-left: 320px;
 }
 
-.insta_item:nth-child(3) {
+.insta_item:nth-child(2) {
   padding: 0px 0px 0px 0px ;
 }
 
-.insta_item:nth-child(3) img{
+.insta_item:nth-child(2) img{
   width: 100%;
   height: 100%;
   object-fit:cover;
 }
 
-.insta_item:nth-child(4) {
+.insta_item:nth-child(3) {
   background-color: black;
   justify-content: space-around;
 
@@ -149,34 +154,34 @@ body {
   margin-right: 20px;
 }
 
-.insta_item:nth-child(5) {
+.insta_item:nth-child(4) {
   padding: 0px 0px 0px 20px ;
   background-color: black;
 }
 
-.insta_item:nth-child(6) {
+.insta_item:nth-child(5) {
   background-color: black;
   font-size: 15px;
   color: #A8A8A8;
-  padding: 0px 0px 80px 5px ;
+  padding: 0px 0px 20px 5px ;
 }
 
-.insta_item:nth-child(7) {
+/* .insta_item:nth-child(6) {
   color: black;
   border-top: thin solid #212121;
   background-color: black;
 }
 
-.insta_item:nth-child(8) {
+.insta_item:nth-child(7) {
   background-color: black;
   border-top: thin solid #212121;
   justify-content: space-around;
-}
+} */
 
-.insta_item:nth-child(8) img{
+/* .insta_item:nth-child(8) img{
   width: 40px;
   height: 40px;
-}
+} */
 
 i {
   font: inherit;
@@ -195,7 +200,6 @@ i {
 }
 
 .item2 {
-  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,8 +217,8 @@ i {
 }
 
 table {
-  width: 400px;
-  height: 400px;
+  width: 70%;
+  height: 70%;
   background-color: white;
   border-radius: 10px;
 }
@@ -229,11 +233,19 @@ th, td {
   border : 2px solid white;
 } */
 
-h2, ul, li {
+ul, li {
   /* border : 2px solid white; */
   padding: 10px;
   margin-left: 30px;
+  font-size: 15px;
 }
+
+h2 {
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+
 
 /* 애니메이션 */
 @keyframes grow {
